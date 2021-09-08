@@ -22,7 +22,8 @@
     "react-scripts": "4.0.3",
     "react-transition-group": "^4.4.1",
     "tailwindcss": "^2.1.1",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "firebase": "^9.0.1"
   },
   "scripts": {
     "start": "craco start",
