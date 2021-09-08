@@ -1,4 +1,4 @@
-# Fitness Dashbaord based on the Tailwind dashboard template
+# Fitness Dashboard based on the Tailwind dashboard template
 
 **Mosaic Lite** is a responsive dashboard template built on top of TailwindCSS and fully coded in React. It comes with several pre-coded charts (built with Chart.js 3) and widgets, and it's a great starting for anyone who wants to create a user interface for SaaS products, administrator dashboards, modern web apps, and more.
 
