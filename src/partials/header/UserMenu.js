@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Transition from '../../utils/Transition';
 
 import UserAvatar from '../../images/user-avatar-32.png';
+import {logout } from "../../utils/firebase";
 
 function UserMenu() {
 
@@ -82,7 +83,10 @@ function UserMenu() {
               <Link
                 className="font-medium text-sm text-indigo-500 hover:text-indigo-600 flex items-center py-1 px-3"
                 to="/"
-                onClick={() => setDropdownOpen(!dropdownOpen)}
+                onClick={() => {
+                  setDropdownOpen(!dropdownOpen)
+                  logout()
+                }}
               >
                 Sign Out
               </Link>

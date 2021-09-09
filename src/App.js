@@ -10,14 +10,16 @@ import './css/style.scss';
 import { focusHandling } from 'cruip-js-toolkit';
 import './charts/ChartjsConfig';
 
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth, db, logout } from "./utils/firebase";
+
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login/Login';
 
 function App() {
-
+  const [user, loading, error] = useAuthState(auth);
   const location = useLocation();
-  const [token, setToken] = useState();
 
   useEffect(() => {
     document.querySelector('html').style.scrollBehavior = 'auto'
@@ -26,8 +28,10 @@ function App() {
     focusHandling('outline');
   }, [location.pathname]); // triggered on route change
 
-  if(!token) {
-    return <Login setToken={setToken} />
+  console.log(user)
+
+  if (!user) {
+    return <Login />
   }
 
   return (
