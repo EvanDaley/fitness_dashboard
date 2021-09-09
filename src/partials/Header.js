@@ -3,7 +3,6 @@ import SearchModal from './header/SearchModal';
 import Notifications from './header/Notifications';
 import Help from './header/Help';
 import UserMenu from './header/UserMenu';
- 
 
 function Header({
   sidebarOpen,
@@ -37,9 +36,9 @@ function Header({
           {/* Header: Right side */}
           <div className="flex items-center">
 
-            <SearchModal />
-            <Notifications />
-            <Help />
+            {/* <SearchModal /> */}
+            {/* <Notifications /> */}
+            {/* <Help /> */}
             {/*  Divider */}
             <hr className="w-px h-6 bg-gray-200 mx-3" />
             <UserMenu />
