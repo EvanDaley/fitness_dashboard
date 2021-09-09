@@ -2,6 +2,7 @@
   "name": "mosaic-light-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://evandaley.github.io/fitness_dashboard/",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@tailwindcss/forms": "^0.2.1",

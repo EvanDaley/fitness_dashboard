@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {
   Switch,
   Route,
+  HashRouter,
+  Link,
   useLocation
 } from 'react-router-dom';
 
@@ -16,6 +18,14 @@ import { auth, db, logout } from "./utils/firebase";
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login/Login';
+
+function About() {
+  return (
+    <div>
+      <p>sdfasdf</p>
+    </div>
+  )
+}
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
@@ -36,11 +46,25 @@ function App() {
 
   return (
     <>
-      <Switch>
+      <HashRouter basename="/">
+        <div>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+          </ul>
+
+          <hr />
+
+          <Route exact path="/" component={Dashboard} />
+          <Route path="/about" component={About} />
+        </div>
+      </HashRouter>
+
+      {/* <Switch>
         <Route exact path="/">
           <Dashboard />
         </Route>
-      </Switch>
+      </Switch> */}
     </>
   );
 }
