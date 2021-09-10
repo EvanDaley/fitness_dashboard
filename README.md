@@ -2,7 +2,7 @@
 
 ## Live demo
 
-Check the live demo here 👉️ [https://evandaley.github.io/fitness_dashboard/](https://evandaley.github.io/fitness_dashboard/)
+Check the live demo here [https://evandaley.github.io/fitness_dashboard/](https://evandaley.github.io/fitness_dashboard/)
 
 ## Table of contents
 
